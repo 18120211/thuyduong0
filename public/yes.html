@@ -1,0 +1,58 @@
+<html>
+<style>
+    code,
+    pre {
+        display: none;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+<ul>
+
+</ul>
+<pre id="taag_output_text" style="float:left;" class="fig" contenteditable="true">
+
+        LLLLLLLLLLL                  OOOOOOOOO     VVVVVVVV           VVVVVVVVEEEEEEEEEEEEEEEEEEEEEE     YYYYYYY       YYYYYYY     OOOOOOOOO     UUUUUUUU     UUUUUUUU                   333333333333333   
+        L:::::::::L                OO:::::::::OO   V::::::V           V::::::VE::::::::::::::::::::E     Y:::::Y       Y:::::Y   OO:::::::::OO   U::::::U     U::::::U           &lt;&lt;&lt;&lt;&lt;&lt;&lt;3:::::::::::::::33 
+        L:::::::::L              OO:::::::::::::OO V::::::V           V::::::VE::::::::::::::::::::E     Y:::::Y       Y:::::Y OO:::::::::::::OO U::::::U     U::::::U          &lt;:::::&lt; 3::::::33333::::::3
+        LL:::::::LL             O:::::::OOO:::::::OV::::::V           V::::::VEE::::::EEEEEEEEE::::E     Y::::::Y     Y::::::YO:::::::OOO:::::::OUU:::::U     U:::::UU         &lt;:::::&lt;  3333333     3:::::3
+          L:::::L               O::::::O   O::::::O V:::::V           V:::::V   E:::::E       EEEEEE     YYY:::::Y   Y:::::YYYO::::::O   O::::::O U:::::U     U:::::U         &lt;:::::&lt;               3:::::3
+          L:::::L               O:::::O     O:::::O  V:::::V         V:::::V    E:::::E                     Y:::::Y Y:::::Y   O:::::O     O:::::O U:::::D     D:::::U        &lt;:::::&lt;                3:::::3
+          L:::::L               O:::::O     O:::::O   V:::::V       V:::::V     E::::::EEEEEEEEEE            Y:::::Y:::::Y    O:::::O     O:::::O U:::::D     D:::::U       &lt;:::::&lt;         33333333:::::3 
+          L:::::L               O:::::O     O:::::O    V:::::V     V:::::V      E:::::::::::::::E             Y:::::::::Y     O:::::O     O:::::O U:::::D     D:::::U      &lt;:::::&lt;          3:::::::::::3  
+          L:::::L               O:::::O     O:::::O     V:::::V   V:::::V       E:::::::::::::::E              Y:::::::Y      O:::::O     O:::::O U:::::D     D:::::U       &lt;:::::&lt;         33333333:::::3 
+          L:::::L               O:::::O     O:::::O      V:::::V V:::::V        E::::::EEEEEEEEEE               Y:::::Y       O:::::O     O:::::O U:::::D     D:::::U        &lt;:::::&lt;                3:::::3
+          L:::::L               O:::::O     O:::::O       V:::::V:::::V         E:::::E                         Y:::::Y       O:::::O     O:::::O U:::::D     D:::::U         &lt;:::::&lt;               3:::::3
+          L:::::L         LLLLLLO::::::O   O::::::O        V:::::::::V          E:::::E       EEEEEE            Y:::::Y       O::::::O   O::::::O U::::::U   U::::::U          &lt;:::::&lt;              3:::::3
+        LL:::::::LLLLLLLLL:::::LO:::::::OOO:::::::O         V:::::::V         EE::::::EEEEEEEE:::::E            Y:::::Y       O:::::::OOO:::::::O U:::::::UUU:::::::U           &lt;:::::&lt; 3333333     3:::::3
+        L::::::::::::::::::::::L OO:::::::::::::OO           V:::::V          E::::::::::::::::::::E         YYYY:::::YYYY     OO:::::::::::::OO   UU:::::::::::::UU             &lt;&lt;&lt;&lt;&lt;&lt;&lt;3::::::33333::::::3
+        L::::::::::::::::::::::L   OO:::::::::OO              V:::V           E::::::::::::::::::::E         Y:::::::::::Y       OO:::::::::OO       UU:::::::::UU                      3:::::::::::::::33 
+        LLLLLLLLLLLLLLLLLLLLLLLL     OOOOOOOOO                 VVV            EEEEEEEEEEEEEEEEEEEEEE         YYYYYYYYYYYYY         OOOOOOOOO           UUUUUUUUU                         333333333333333   
+                                                                                                                                                                                                           
+                                                                                                                                                                                                           
+                                                                                                                                                                                                           
+                                                                                                                                                                                                           
+                                                                                                                                                                                                           
+                                                                                                                                                                                                           
+                                                                                                                                                                                                           </pre>
+<script>
+
+    $('document').ready(async () => {
+        function sleep(ms) {
+            return new Promise(res => setTimeout(res, ms))
+        }
+        for (let i = 1; i < 10; i++) {
+            await $('ul').append(`<li>Đang xử lý ${i * 10}%</li>`)
+            await sleep(500)
+        }
+        $.get('/yes', (data) => {
+            console.log(data)
+            $('ul').after(data)
+            $('code').show()
+            $('pre').show()
+        });
+    })
+</script>
+
+</html>
